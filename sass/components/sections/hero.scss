@@ -58,6 +58,10 @@
       width: 100%;
       text-align: center;
       color: white;
+
+      @media screen and (max-width: 1440px) {
+        padding: 160px 0px 0px;
+      }
     }
 
     &-sub-title {
@@ -66,7 +70,7 @@
       font-size: 72px;
       margin-bottom: 35px;
 
-      @media screen and (max-width: 1200px) {
+      @media screen and (max-width: 1440px) {
         font-size: 45px;
       }
 
@@ -82,7 +86,7 @@
       text-transform: uppercase;
       margin-bottom: 56px;
 
-      @media screen and (max-width: 1200px) {
+      @media screen and (max-width: 1440px) {
         font-size: 90px;
         line-height: 100px;
         margin-bottom: 30px;

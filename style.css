@@ -9686,63 +9686,6 @@ a.text-dark:focus, a.text-dark:hover {
 	color: #999;
 }
 
-@media (max-width: 770px) {
-	.section {
-		padding: 40px 0;
-	}
-	.team__wrapper {
-		margin-top: 50px;
-		justify-content: center;
-	}
-	.team__item {
-		width: 100%;
-		max-width: 410px;
-		margin-bottom: 30px;
-	}
-	.team__item:last-child {
-		margin-bottom: 0;
-	}
-	.wedo__img {
-		display: none;
-	}
-	.wedo__item {
-		width: 100%;
-	}
-	.blog {
-		max-width: 380px;
-		margin: 0 auto;
-	}
-	.blog__item {
-		width: 100%;
-		margin-bottom: 30px;
-	}
-	.blog__item:last-child {
-		margin-bottom: 0;
-	}
-}
-
-@media (max-width: 575px) {
-	.section__header {
-		margin-bottom: 50px;
-	}
-	.section__suptitle {
-		font-size: 20px;
-	}
-	.section__title {
-		font-size: 24px;
-	}
-	.section__title:after {
-		margin: 20px auto;
-	}
-	.blogs__img {
-		width: 80px;
-		height: 50px;
-	}
-	.blogs__title {
-		font-size: 10px;
-	}
-}
-
 * {
 	margin: 0px;
 	padding: 0px;
@@ -10033,6 +9976,12 @@ body {
 	color: white;
 }
 
+@media screen and (max-width: 1440px) {
+	.hero__carousel-info {
+		padding: 160px 0px 0px;
+	}
+}
+
 .hero__carousel-sub-title {
 	font-family: "KaushanScript";
 	font-weight: 400;
@@ -10040,7 +9989,7 @@ body {
 	margin-bottom: 35px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1440px) {
 	.hero__carousel-sub-title {
 		font-size: 45px;
 	}
@@ -10060,7 +10009,7 @@ body {
 	margin-bottom: 56px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1440px) {
 	.hero__carousel-title {
 		font-size: 90px;
 		line-height: 100px;
@@ -10449,6 +10398,63 @@ body {
 
 .blog-stat__item i {
 	color: #95e1d3;
+}
+
+@media (max-width: 770px) {
+	.section {
+		padding: 40px 0;
+	}
+	.team__wrapper {
+		margin-top: 50px;
+		justify-content: center;
+	}
+	.team__item {
+		width: 100%;
+		max-width: 410px;
+		margin-bottom: 30px;
+	}
+	.team__item:last-child {
+		margin-bottom: 0;
+	}
+	.wedo__img {
+		display: none;
+	}
+	.wedo__item {
+		width: 100%;
+	}
+	.blog {
+		max-width: 380px;
+		margin: 0 auto;
+	}
+	.blog__item {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.blog__item:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 575px) {
+	.section__header {
+		margin-bottom: 50px;
+	}
+	.section__suptitle {
+		font-size: 20px;
+	}
+	.section__title {
+		font-size: 24px;
+	}
+	.section__title:after {
+		margin: 20px auto;
+	}
+	.blogs__img {
+		width: 80px;
+		height: 50px;
+	}
+	.blogs__title {
+		font-size: 10px;
+	}
 }
 
 /*# sourceMappingURL=style.css.map */
