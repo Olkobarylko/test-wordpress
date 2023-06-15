@@ -1,0 +1,166 @@
+.hero {
+  &__carousel {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+
+    &-inner {
+      width: 100%;
+      height: 100%;
+    }
+
+    &-item {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-wrapper {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    &-gradient {
+      position: absolute;
+      z-index: -1;
+      right: 0;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+
+      &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 90%;
+        background: rgb(252, 227, 138);
+        background: linear-gradient(
+          0deg,
+          rgba(252, 227, 138, 1) 0%,
+          rgba(243, 129, 129, 1) 100%
+        );
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &-info {
+      padding: 220px 0px 0px;
+      max-width: 840px;
+      width: 100%;
+      text-align: center;
+      color: white;
+    }
+
+    &-sub-title {
+      font-family: "KaushanScript";
+      font-weight: 400;
+      font-size: 72px;
+      margin-bottom: 35px;
+
+      @media screen and (max-width: 1200px) {
+        font-size: 45px;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 36px;
+      }
+    }
+
+    &-title {
+      font-size: 150px;
+      line-height: 140px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 56px;
+
+      @media screen and (max-width: 1200px) {
+        font-size: 90px;
+        line-height: 100px;
+        margin-bottom: 30px;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 45px;
+        line-height: 50px;
+      }
+    }
+
+    &-separate {
+      margin-bottom: 50px;
+    }
+
+    &-button {
+      padding: 6px 27px;
+      border: 3px solid #ffffff;
+      color: inherit;
+      font-weight: bold;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    .carousel-indicators {
+      padding: 0px 15px;
+      justify-content: space-between;
+      bottom: 2px;
+      margin: 0px auto;
+      max-width: 1230px;
+      width: 100%;
+
+      li {
+        height: auto;
+        width: 100%;
+        text-indent: 0px;
+        background-color: transparent;
+        border-bottom: none;
+
+        @media screen and (max-width: 768px) {
+          padding: 0 6px;
+
+          span {
+            display: none;
+          }
+        }
+      }
+
+      li.active {
+        .hero__carousel-indicators-line::before {
+          content: "";
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          background-color: #f38181;
+        }
+      }
+    }
+
+    &-indicators-line {
+      position: relative;
+      height: 3px;
+      background-color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    &-indicators-text {
+      width: max-content;
+      font-size: 18px;
+      font-weight: 400;
+      color: white;
+      text-transform: uppercase;
+
+      b {
+        font-size: 24px;
+      }
+    }
+  }
+}

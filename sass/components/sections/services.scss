@@ -1,0 +1,108 @@
+.wedo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  
+    &__item {
+      width: 50%;
+      padding: 0 15px;
+    }
+  
+    &__img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 20px;
+    }
+  }
+  
+  .accordion .card {
+    margin-bottom: 10px;
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    border-radius: 0;
+  }
+  
+  .accordion > .card > .card-header {
+    padding: 0;
+    margin: 0;
+    background: none;
+  }
+  
+  .accordion .card > .card-header .btn {
+    padding: 15px 20px 15px 65px;
+    position: relative;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    box-shadow: none;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .accordion > .card .collapse {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .accordion .card > .card-header .btn::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    position: absolute;
+    top: 30%;
+    right: 20px;
+    z-index: 1;
+    transform: translateY(-50%) rotate(-45deg);
+    margin-top: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .accordion .card > .card-header .btn.collapsed::after {
+    margin-top: 5px;
+    transform: translateY(-50%) rotate(135deg);
+  }
+  
+  .accordion .card .accordion__content p {
+    max-height: 160px;
+    overflow-y: auto;
+    padding-right: 20px;
+  }
+  
+  .accordion .card .accordion__content p::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .accordion .card .accordion__content p::-webkit-scrollbar-track {
+    border-radius: 2.5px;
+    background-color: #f5f5f5;
+  }
+  
+  .accordion .card .accordion__content p::-webkit-scrollbar-thumb {
+    background-color: #95e1d3;
+    border-radius: 2.5px;
+  }
+  
+  .accordion__icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 1;
+    transform: translateY(-50%);
+  }
+  
+  .accordion__title {
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+  }
+  
+  .accordion__content {
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #999;
+    font-style: italic;
+    font-weight: 300;
+  }

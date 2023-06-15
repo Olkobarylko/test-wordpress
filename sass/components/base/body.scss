@@ -1,0 +1,107 @@
+.section {
+  padding: 80px 0;
+}
+
+.section__header {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.section__suptitle {
+  font-family: "Kaushan Script", cursive;
+  font-size: 24px;
+  color: #333;
+}
+
+.section__title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.section__title:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 30px auto;
+  background-color: #f38181;
+}
+
+.section__text {
+  font-size: 15px;
+  color: #999;
+}
+
+@media (max-width: 770px) {
+  .section {
+    padding: 40px 0;
+  }
+
+  .team__wrapper {
+    margin-top: 50px;
+    justify-content: center;
+  }
+
+  .team__item {
+    width: 100%;
+    max-width: 410px;
+    margin-bottom: 30px;
+  }
+
+  .team__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .wedo__img {
+    display: none;
+  }
+
+  .wedo__item {
+    width: 100%;
+  }
+
+  .blog {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .blog__item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .blog__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .section__header {
+    margin-bottom: 50px;
+  }
+
+  .section__suptitle {
+    font-size: 20px;
+  }
+
+  .section__title {
+    font-size: 24px;
+  }
+
+  .section__title:after {
+    margin: 20px auto;
+  }
+
+  .blogs__img {
+    width: 80px;
+    height: 50px;
+  }
+
+  .blogs__title {
+    font-size: 10px;
+  }
+}
